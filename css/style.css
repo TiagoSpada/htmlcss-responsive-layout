@@ -16,7 +16,7 @@
     flex-wrap: wrap;
 }
 
-.col-33 {
+.col {
     width: 100%;
 }
 
@@ -52,54 +52,98 @@ header {
 }
 /* FINE HEADER  */
 
+/* INIZIO JUMBOTRON */
 .jumbotron {
     padding: 4rem 2rem;
 }
 
-.jumbotron .col-66 {
-    background-color: lightblue;
-    height: 35rem;
-    border-radius: 4%;
-}
-
-.jumbotron .col-33 {
+.jumbotron .col {
     background-color: lightblue;
     height: 35rem;
     margin-top: 2rem;
-    border-radius: 4%;
+    border-radius: 1rem;
 }
 
+/* FINE JUMBOTRON */
+
+/* INIZIO PLANNING SECTION */
+
+.planning {
+    background-color: #9792e4;
+}
+
+.planning .container-1200 {
+    padding: 4rem 2rem;
+}
+
+.planning .col {
+    background-color: silver;
+    border: 1px solid black;
+    margin-bottom: 3rem;
+}
+
+.planning .col-left {
+    height: 35rem;
+}
+
+.planning .col-right {
+    height: 20rem;
+    
+}
+
+/* FINE PLANNING SECTION */
+
+/* INIZIO PARTNERS SECTION */
+
+.partners .container-1200 {
+    padding: 4rem 2rem;
+}
+
+.partners .col {
+    background-color: #9792e4;
+    height: 15rem;
+    margin-top: 4rem;
+    border-radius: 3rem;
+}
+/* FINE PARTNERS SECTION */
+
+
+
+
+
+/* DISPLAY RABLET */
+
+@media screen and (min-width: 481px) {
+    /* JUMBOTRON */
+    .jumbotron .row {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+        
+    .jumbotron .col {
+        width: calc(100% / 3 - 2rem);
+    }
+
+    .jumbotron .col:first-child {
+        width: calc(100% / 1.5 - 2rem);
+    }
+        
+    .jumbotron .col {
+        background-color: lightblue;
+        height: 35rem;
+        border-radius: 1rem;
+        margin:  2rem 1rem;
+    }
+
+}
 
 
 /* DISPLAY DESKTOP */
 
-@media screen and (min-width: 481px) {
-        
-        .col-33 {
-            width: calc(100% / 3 - 2rem);
-        }
-
-        .jumbotron .col-33:first-child {
-            width: calc(100% / 1.5 - 2rem);
-        }
-        
-        .jumbotron .col-33 {
-            background-color: lightblue;
-            height: 35rem;
-            border-radius: 4%;
-        }
-
-        .jumbotron .col-66 ,.jumbotron .col-33 {
-            margin:  2rem 1rem;
-        }
-        
-
-}
-
-
-/* DISPLAY TABLET */
-
 @media screen and (min-width: 769px) {
+
+
+    /* HEADER  */
     .menu-mobile {
         display: none;
     }
@@ -112,23 +156,32 @@ header {
         height: 6rem;
     }
 
-    .col-33 {
-        width: calc(100% / 3 - 2rem);
+    /* PLANNING SECTION */
+    .planning{
+        padding: 4rem 2rem;
     }
 
-    .jumbotron .col-33:first-child {
-        flex-basis: auto;
+    .planning .row {
+        margin-left: -2rem;
+        margin-right: -2rem;
+        gap: 2rem;
     }
     
-    .jumbotron .col-33 {
-        background-color: lightblue;
+    .planning .col {
+        width: calc(50% - 1rem);
+        background-color: silver;
+        border: 1px solid black;
+        margin: 0;
+    }
+
+    .planning .col-left {
         height: 35rem;
-        border-radius: 4%;
     }
 
-    .jumbotron .col-66 ,.jumbotron .col-33 {
-        margin:  2rem 1rem;
+    .planning .col-right {
+        height: 25rem;
+        align-self: flex-end;
     }
-    
+      
 
 }
