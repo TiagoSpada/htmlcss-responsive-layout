@@ -107,7 +107,24 @@ header {
 }
 /* FINE PARTNERS SECTION */
 
+/* INIZIO BENEFITS SECTION */
 
+.benefits {
+    background-color: #9792e4;
+}
+
+.benefits .container-1200 {
+    padding: 4rem 2rem;
+}
+
+.benefits .col {
+    background-color: white;
+    height: 25rem;
+    margin-top: 4rem;
+    border-radius: 3rem;
+}
+
+/* FINE BENEFITS SECTION */
 
 
 
@@ -129,11 +146,20 @@ header {
     }
         
     .jumbotron .col {
-        background-color: lightblue;
-        height: 35rem;
-        border-radius: 1rem;
         margin:  2rem 1rem;
     }
+
+    /* BENEFITS */
+    .benefits .row {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .benefits .col {
+        width: calc(50% - 2rem);
+        margin: 1rem;
+    }
+    
 
 }
 
@@ -169,18 +195,16 @@ header {
     
     .planning .col {
         width: calc(50% - 1rem);
-        background-color: silver;
-        border: 1px solid black;
         margin: 0;
     }
 
-    .planning .col-left {
-        height: 35rem;
+    .planning .col-right {
+        align-self: flex-end;
     }
 
-    .planning .col-right {
-        height: 25rem;
-        align-self: flex-end;
+    /* BENEFITS */
+        .benefits .col {
+        width: calc(100% / 3 - 2rem);
     }
       
 
