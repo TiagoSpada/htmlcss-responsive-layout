@@ -79,11 +79,11 @@ header {
 .planning .col {
     background-color: silver;
     border: 1px solid black;
-    margin-bottom: 3rem;
 }
 
 .planning .col-left {
     height: 35rem;
+    margin-bottom: 3rem;
 }
 
 .planning .col-right {
@@ -126,6 +126,25 @@ header {
 
 /* FINE BENEFITS SECTION */
 
+/* INIZIO ABOUT SECTION */
+
+.about .container-1200 {
+    padding: 4rem 2rem;
+}
+
+.about .col {
+    background-color: silver;
+    height: 35rem;
+    border: 1px solid black;
+}
+
+.about .col-left {
+    margin-bottom: 3rem;
+}
+
+
+
+/* FINE ABOUT SECTION */
 
 
 /* DISPLAY RABLET */
@@ -158,6 +177,21 @@ header {
     .benefits .col {
         width: calc(50% - 2rem);
         margin: 1rem;
+    }
+
+    /* ABOUT */
+    .benefits .row {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .about .col-left {
+        width: calc(60% - 1rem);
+        margin-right: 1rem;
+    }
+    
+    .about .col-right {
+        width: 40%;
     }
     
 
@@ -205,6 +239,22 @@ header {
     /* BENEFITS */
         .benefits .col {
         width: calc(100% / 3 - 2rem);
+    }
+
+    /* ABOUT */
+    .benefits .row {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .about .col-left {
+        width: calc(70% - 2rem);
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+    
+    .about .col-right {
+        width: 30%;
     }
       
 
