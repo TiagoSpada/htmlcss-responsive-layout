@@ -31,20 +31,26 @@ header {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 1200px;
+    color: white;
 }
 
 .logo {
-    width: 50%;
-    background-color: rgba(177, 66, 66, 0.8);
-    height: 6rem;
+    width: 20%;
+}
+
+.logo img {
+    width: 8rem;
+    margin: 1rem 2rem;
+
 }
 
 .menu-mobile {
     width: 50%;
-    background-color: rgba(66, 177, 94, 0.8);
     text-align: right;
-    height: 6rem;
+    font-size: 3rem;
+    margin: auto 2rem;
 }
 
 .menu-desktop {
@@ -58,10 +64,50 @@ header {
 }
 
 .jumbotron .col {
-    background-color: lightblue;
-    height: 35rem;
+    background-color: #b5ddff;
     margin-top: 2rem;
     border-radius: 1rem;
+    padding: 0 2.5rem;
+}
+
+.jumbotron .content {
+    text-align: center;
+}
+
+.jumbotron .title {
+    color: #0084fd;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.jumbotron i {
+    font-size: 4rem;
+    color: #0084fd;
+    margin-top: 1.5rem;
+}
+
+.jumbotron p {
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.jumbotron a {
+    text-decoration: none;
+    color: white;
+    background-color: #0084fd;
+    font-size: 1.5rem;
+    padding: 0.5rem 3.5rem;
+    border-radius: 20px;
+}
+
+.jumbotron img {
+    margin-top: 2rem;
+    display: block;
+    max-width: 250px;
+}
+
+.jumbotron .col:first-child .content {
+    text-align: left;
 }
 
 /* FINE JUMBOTRON */
@@ -73,23 +119,64 @@ header {
 }
 
 .planning .container-1200 {
-    padding: 4rem 2rem;
+    padding: 4rem 3rem;
 }
 
 .planning .col {
-    background-color: silver;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .planning .col-left {
-    height: 35rem;
     margin-bottom: 3rem;
+    color: white;
+}
+
+.planning .col-left img {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.planning .col-left h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.planning .col-left p {
+    line-height: 1.5;
+    /* font-size: 1rem; */
 }
 
 .planning .col-right {
-    height: 20rem;
-    
+
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem 3rem;
+    text-align: center;
 }
+
+.planning .col-right img {
+    display: block;
+    width: 70%;
+    margin: 1rem auto;
+}
+
+.planning .col-right h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.planning .col-right p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.planning .col-right i {
+    background-color: #9792e4;
+    padding: 1rem 1.1rem;
+    border-radius: 50%;
+}
+
 
 /* FINE PLANNING SECTION */
 
@@ -147,9 +234,9 @@ header {
 /* FINE ABOUT SECTION */
 
 
-/* DISPLAY RABLET */
+/* DISPLAY tABLET */
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 576px) {
     /* JUMBOTRON */
     .jumbotron .row {
         margin-left: -1rem;
@@ -162,7 +249,9 @@ header {
 
     .jumbotron .col:first-child {
         width: calc(100% / 1.5 - 2rem);
+        
     }
+
         
     .jumbotron .col {
         margin:  2rem 1rem;
@@ -200,7 +289,7 @@ header {
 
 /* DISPLAY DESKTOP */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
 
 
     /* HEADER  */
@@ -210,30 +299,57 @@ header {
 
     .menu-desktop {
         display: block;
-        width: 50%;
-        background-color: rgba(66, 177, 171, 0.8);
+        width: 80%;
         text-align: right;
-        height: 6rem;
+        margin: 2rem 0;
+    }
+
+    .menu-desktop ul {
+        list-style-type: none;
+    }
+    
+    .menu-desktop li {
+        display: inline-block;
+        font-size: 1.5rem;
+        margin: 0 1rem;
+    }
+
+    .menu-desktop li a {
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        padding: 10px 15px;
+        border-radius: 20px;
+        margin-right: 0;
+    }
+
+    /* JUMBOTRON  */
+    .jumbotron .col:first-child {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .jumbotron .col:first-child .content{
+        width: 50%;
     }
 
     /* PLANNING SECTION */
-    .planning{
-        padding: 4rem 2rem;
-    }
 
     .planning .row {
-        margin-left: -2rem;
-        margin-right: -2rem;
-        gap: 2rem;
+        gap: 5rem;
     }
     
     .planning .col {
-        width: calc(50% - 1rem);
-        margin: 0;
+        width: calc(50% - 5rem);
     }
 
     .planning .col-right {
         align-self: flex-end;
+    }
+
+    .planning .col-left img {
+        width: 100%;
+        margin-bottom: 2rem;
     }
 
     /* BENEFITS */
