@@ -122,10 +122,6 @@ header {
     padding: 4rem 3rem;
 }
 
-.planning .col {
-    /* border: 1px solid black; */
-}
-
 .planning .col-left {
     margin-bottom: 3rem;
     color: white;
@@ -186,15 +182,75 @@ header {
     padding: 4rem 2rem;
 }
 
+.partners .title-section {
+    text-align: center;
+    padding: 1rem;
+}
+
+.partners .title-section div {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.partners .title-section .title {
+    color: #9792e4;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.partners .title-section p {
+    font-size: 17px;
+}
+
 .partners .col {
     background-color: #9792e4;
-    height: 15rem;
     margin-top: 4rem;
     border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
 }
+
+.partners .col img {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+.partners .col p {
+    color: white;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.partners .col span {
+    font-size: 20px;
+}
+
+.partners .col h4 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
 /* FINE PARTNERS SECTION */
 
 /* INIZIO BENEFITS SECTION */
+.benefits .title-section {
+    text-align: center;
+}
+
+.benefits .title-section h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
 
 .benefits {
     background-color: #9792e4;
@@ -206,10 +262,44 @@ header {
 
 .benefits .col {
     background-color: white;
-    height: 25rem;
     margin-top: 4rem;
-    border-radius: 3rem;
+    padding: 2.5rem 3.5rem;
+    border-radius: 2rem;
+
 }
+
+.benefits .number {
+    color: #9792e4;
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+}
+
+.benefits h3 {
+    color: #9792e4;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.benefits p {
+    color: grey;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.benefits button {
+    appearance: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.6rem 3rem 0.7rem;
+    background-color: #9792e4;
+    color: whitesmoke;
+    letter-spacing: 3px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1.5rem;
+} 
 
 /* FINE BENEFITS SECTION */
 
@@ -219,20 +309,142 @@ header {
     padding: 4rem 2rem;
 }
 
-.about .col {
-    background-color: silver;
-    height: 35rem;
-    border: 1px solid black;
-}
-
 .about .col-left {
     margin-bottom: 3rem;
 }
 
+.about .col-left h2{
+    color: #9792e4;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
 
+.about .col-left p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.about img {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+.about .col-right div{
+    color: #9792e4;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.about .col-right button {
+    appearance: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.6rem 2rem 0.7rem;
+    background-color: #9792e4;
+    color: whitesmoke;
+    letter-spacing: 3px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1rem;
+}
 
 /* FINE ABOUT SECTION */
 
+/* INIZIO GET STARTED SECTION */
+
+.get-started {
+    background-color: #9792e4;
+    padding: 3rem;
+}
+
+.get-started .col {
+    width: 100%;
+    margin: auto;
+}
+
+.get-started .content {
+    text-align: center;
+    color: white;
+}
+
+.get-started .content div {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    font-weight: lighter;
+}
+
+.get-started .content h3 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.get-started .content h2 {
+    font-size: 6rem;
+    color: #fdc15f;
+    margin-bottom: 2rem;
+}
+
+.get-started .content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.get-started .content button {
+    appearance: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.5rem 4rem 1.5rem;
+    background-color: white;
+    color: #9792e4;
+    letter-spacing: 4px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.get-started .content .copyright {
+    font-size: 1rem;
+}
+
+/* FINE GET STARTED SECTION */
+
+
+/* FOOTER  */
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+
+.container-footer {
+    margin: auto;
+}
+
+footer p {
+    margin-bottom: 2rem;
+}
+
+footer span {
+    text-decoration: underline;
+    color: #837fc1;
+}
+
+/* FINE FOOTER */
 
 /* DISPLAY tABLET */
 
@@ -252,11 +464,25 @@ header {
         
     }
 
-        
     .jumbotron .col {
         margin:  2rem 1rem;
     }
 
+    /* PARTNERS */
+
+    .partners .col {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .partners .col img {
+        margin-right: 1.5rem;
+    }
+
+    .partners .col .content {
+        margin: auto;
+    }
+        
     /* BENEFITS */
     .benefits .row {
         margin-left: -1rem;
@@ -281,6 +507,14 @@ header {
     
     .about .col-right {
         width: 40%;
+    }
+
+    .get-started .col {
+        width: 80%;
+    }
+
+    .container-footer {
+        width: 80%;
     }
     
 
@@ -371,6 +605,20 @@ header {
     
     .about .col-right {
         width: 30%;
+    }
+
+    .about .col-right {
+        padding: 0 3rem 0 ;
+    }
+    
+    /* GET STARTED */
+    .get-started .col {
+        width: 60%;
+        margin: auto;
+    }
+
+    .container-footer {
+        width: 60%;
     }
       
 
